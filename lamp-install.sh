@@ -7,7 +7,7 @@ echo -e "\n\nInstalling Apache2 Web server\n"
 sudo apt-get install apache2 apache2-doc apache2-utils libexpat1 ssl-cert -y
 
 echo -e "\n\nInstalling PHP & Requirements\n"
-sudo apt-get install libapache2-mod-php php php-common php-curl php-dev php-gd php-pear php-mysql -y
+sudo apt-get install libapache2-mod-php php php-common php-curl php-dev php-gd php-pear php-mysql php-db -y
 
 echo -e "\n\nInstalling MySQL\n"
 sudo apt-get install mysql-server mysql-client -y
