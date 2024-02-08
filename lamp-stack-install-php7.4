@@ -21,7 +21,7 @@ sudo apt-get install phpmyadmin -y
 
 # Configure Apache to recognize phpMyAdmin
 echo -e "\n\nConfiguring Apache for phpMyAdmin\n"
-sudo echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf
+echo "Include /etc/phpmyadmin/apache.conf" | sudo tee -a /etc/apache2/apache2.conf
 
 echo -e "\n\nPermissions for /var/www\n"
 sudo chown -R www-data:www-data /var/www
